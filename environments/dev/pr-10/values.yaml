@@ -1,0 +1,19 @@
+namespace: pr-10
+
+replicaCount: 1
+
+image:
+  repository: ghcr.io/federicomameli1/wayside-monitor
+  tag: "d113c0b806b5afadce1681de21fbc3a5df2eb557"
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 8000
+
+env:
+  collector_stream: "wms:sensor-events"
+  engine_stream: "wms:anomaly-events"
+  anomaly_engine_model_ver: "vibration_model_v2.pkl"
+  dead_letter_path: "/tmp/wms-dead-letter.jsonl"
