@@ -3,7 +3,7 @@ namespace: wayside-prod
 replicaCount: 2
 
 image:
-  repository: ghcr.io/federicomameli1/wayside-monitor@sha256:9875e3b26e71fa30b9af462c393c38297e575c9ff06d2f440b545948068c9d82
+  repository: ghcr.io/federicomameli1/wayside-monitor@sha256:5fc04c37ce90cfdbcbffb42b979def61bbe720dc9398ce45b6e0de555f9f6dd4
   tag: ""
   pullPolicy: IfNotPresent
 
