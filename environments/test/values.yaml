@@ -4,7 +4,7 @@ replicaCount: 1
 
 image:
   repository: ghcr.io/federicomameli1/wayside-monitor
-  tag: "35c99d49f47062953f1c82995d9372c6d2c42689"
+  tag: "5326d83b498f8ef0d9d4ea309150a9d1ab1381a4"
   pullPolicy: IfNotPresent
 
 service:
